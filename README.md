@@ -1,12 +1,10 @@
 # Command-line Inventory Application Project
-Back end development practice
-
+Rex Begonias Galore!
 
 A command-line inventory application is a computer program that helps store employees manage what they have in stock. It's a digital helper that works through typing commands into a text-based interface on the computer. It lets users do things like adding new items, updating existing ones, seeing lists of items, checking details of specific items, and removing items from the inventory. So, it's a handy tool for keeping track of what's in the store, all done through typing commands on the computer.
 
 
-#Features
-
+##Features
 
 1. Create a New Rex Begonia: 
    - User Action: The user can add a new rex begonia plant to the inventory.
@@ -46,30 +44,30 @@ A command-line inventory application is a computer program that helps store empl
 
 
 
-### Getting Started
+## Getting Started
 
 Clone this project:
 
-https://github.com/incognito1025/project-command-line-inventory-app.git
+`https://github.com/incognito1025/project-command-line-inventory-app.git`
 
 
 
 After cloning this project, run the following commands on the backend:
 
-cd project-command-line-inventory-app
+`cd project-command-line-inventory-app
+`
+`touch index.js`
 
-touch index.js
-
-touch .gitignore (and add appropriate files and folders like node_modules
+`touch .gitignore` (and add appropriate files and folders like node_modules
 .DS_Store)
 
-mkdir src
+`mkdir src`
 
-touch src/helpers.js
+`touch src/helpers.js`
 
-npm init -y (will create package.json)
+`npm init -y` (will create package.json)
 
-{
+`{
   "name": "my-project",
   "version": "1.0.0",
   "description": "",
@@ -79,80 +77,80 @@ npm init -y (will create package.json)
   },
   "author": "Cam Howe",
   "license": "ISC"
-}
+}`
 
-Application entry point
+### Application entry point
 Within an application, there has to be a starting point for the application to run. The package.json file defines this filename with the key main. According to the default package.json file, the entry point into the application is a file called index.js. You can create it by running the following command:
 
-touch index.js
+`touch index.js`
+
 Open this file and write a simple console log:
-console.log("Hello, Node.js!");
+`console.log("Hello, Node.js!");`
 
 
 To run this program, type:
-node index.js
+`node index.js`
 
 
 Based on the user stories above, create scripts that would run the following (Rsl_ represents a unique id for an example animal):
 
-npm run index
+`npm run index
 npm run create rex begonia taconite
 npm run show Rsl_
 npm run update Rsl_ "rex begonia cosmos"
 npm run destroy Rsl_
-npm run total
+npm run total`
 
 
 package.json:
- "scripts":{
+` "scripts":{
  "index": "node index.js index",
  "create": "node index.js create",
  "show": "node index.js show",
  "update": "node index.js update",
  "destroy": "node index.js destroy",
  "score": "node index.js score"
-}
+}`
 
 
-Index
-mkdir data
-mkdir data/begonias.json
+###Index
+
+`mkdir data
+mkdir data/begonias.json`
 
 
 To add an id, you need to add an npm package to generate a unique id. Limit the id to be 4 characters long, so that there is less for the user to type.
 
-npm install nanoid@3
-
-
+`npm install nanoid@3`
 
 To add id
 
-touch src/begoniaController.js
+`touch src/begoniaController.js`
 
 
 Create the following to import into begoniaController.js
 
-touch data/begoniaPoints.json
+`touch data/begoniaPoints.json`
 
 
-Here are the following commands
+## Here are the following commands:
 
-Show
+### Show
 
-npm run show Rsl_
-
-
-Destroy
-
-npm run destroy Rsl_
+`npm run show Rsl_`
 
 
-Update
+### Destroy
 
-npm run update Rsl_ "red fox"
+`npm run destroy Rsl_`
 
 
-Total will be the sum of the begonia points.
+### Update
+
+`npm run update Rsl_ "rex begonia cosmos"`
+
+
+`Total` will be the sum of the begonia points.
 
 .
 ├── __tests__
@@ -179,4 +177,4 @@ This app has Jest testing.
 
 Jest Supertest testing on backend:
 
-app.test.js - integration testing
+`app.test.js` - integration testing
