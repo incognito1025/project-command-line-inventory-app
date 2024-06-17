@@ -102,7 +102,7 @@ To run this program, type:
 ### Scripts
 Based on the user stories, create scripts in package.json to run the following commands:
 
-Based on the user stories above, create scripts that would run the following (Rsl_ represents a unique id for an example animal):
+Based on the user stories above, create scripts that would run the following (Rsl_ represents a unique id for an example begonia):
 ```
 "scripts": {
   "index": "node index.js",
