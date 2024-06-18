@@ -1,78 +1,79 @@
 # Command-line Inventory Application Project
-Back end development practice
+## Rex Begonias Galore!
+
+## Welcome
+Welcome to Rex Begonias Galore!
+
+This is a back-end application built using Node.js and developed using Microsoft Terminal and VS Code on Windows.
+
+Technologies: Node.js, JavaScript
+
+A command-line inventory application helps store employees manage inventory through a text-based interface. Users can add new items, update existing ones, view lists of items, check details of specific items, and remove items from the inventory. It's a handy tool for managing store inventory via command-line commands.
 
 
-A command-line inventory application is a computer program that helps store employees manage what they have in stock. It's a digital helper that works through typing commands into a text-based interface on the computer. It lets users do things like adding new items, updating existing ones, seeing lists of items, checking details of specific items, and removing items from the inventory. So, it's a handy tool for keeping track of what's in the store, all done through typing commands on the computer.
+## Features
 
+1. Create a New Rex Begonia:
+   - User Action: Add a new rex begonia plant to the inventory.
+   - Implementation: Capture user input for the new begonia's details (e.g., variety, size, price, quantity) and add this information to the inventory data.
 
-#Features
+2. List All Rex Begonias:
+   - User Action: View a list of all available rex begonias in the inventory.
+   - Implementation: Display the list of begonias along with their details (e.g., variety, size, price, quantity) in a readable format on the command line.
 
+3. View Details of a Rex Begonia:
+   - User Action: View detailed information about a specific rex begonia plant.
+   - Implementation: Prompt the user to enter the ID or unique identifier of the begonia they want to view and display its details.
 
-1. Create a New Rex Begonia: 
-   - User Action: The user can add a new rex begonia plant to the inventory.
-   - Implementation: This will involve capturing user input for the new begonia's details (e.g., variety, size, price, quantity) and adding this information to the inventory data.
+4. Delete a Rex Begonia:
+   - User Action: Delete a rex begonia plant from the inventory.
+   - Implementation: Prompt the user to enter the ID or unique identifier of the begonia they want to delete and remove it from the inventory data.
 
-2. List All Rex Begonias: 
-   - User Action: The user can see a list of all available rex begonias in the inventory.
-   - Implementation: This will involve displaying the list of begonias along with their details (e.g., variety, size, price, quantity) in a readable format on the command line.
+5. Update a Rex Begonia:
+   - User Action: Update information about an existing rex begonia plant.
+   - Implementation: Prompt the user to enter the ID or unique identifier of the begonia they want to update and allow them to modify its details (e.g., variety, size, price, quantity).
 
-3. View Details of a Rex Begonia: 
-   - User Action: The user can view detailed information about a specific rex begonia plant.
-   - Implementation: This will involve prompting the user to enter the ID or some unique identifier of the begonia they want to view, and then displaying its details.
+6. Data File Integrity:
+   - User Action: Ensure user actions like creating or deleting items update the data file correctly.
+   - Implementation: Implement logic to handle data operations securely and accurately to prevent data corruption.
 
-4. Delete a Rex Begonia: 
-   - User Action: The user can delete a rex begonia plant from the inventory.
-   - Implementation: This will involve prompting the user to enter the ID or some unique identifier of the begonia they want to delete, and then removing it from the inventory data.
+7. Unique ID Assignment:
+   - User Action: Assign a unique ID when the user creates a new begonia.
+   - Implementation: Generate a unique ID for each new begonia added to the inventory to ensure it can be easily tracked and managed.
 
-5. Update a Rex Begonia: 
-   - User Action: The user can update information about an existing rex begonia plant.
-   - Implementation: This will involve prompting the user to enter the ID or some unique identifier of the begonia they want to update, and then allowing them to modify its details (e.g., variety, size, price, quantity).
+8. Cart Functionality:
+   - User Action: Add rex begonia plants to a shopping cart and see the total price and quantity.
+   - Implementation: Implement a cart feature where the user can add begonias, calculate the total price, and display the cart contents.
 
-6. Data File Integrity: 
-   - User Action: The user's actions like creating or deleting items should update the data file correctly.
-   - Implementation: This will involve implementing logic to handle data operations securely and accurately to prevent data corruption.
-
-7. Unique ID Assignment: 
-   - User Action: When the user creates a new begonia, a unique ID is assigned to it.
-   - Implementation: This will involve generating a unique ID for each new begonia added to the inventory to ensure it can be easily tracked and managed.
-
-8. Cart Functionality: 
-   - User Action: The user can add rex begonia plants to a shopping cart and see the total price and quantity.
-   - Implementation: This will involve implementing a cart feature where the user can add begonias, calculate the total price, and display the cart contents.
-
-9. Cancel Cart Function: 
-   - User Action: The user can empty the shopping cart.
-   - Implementation: This will involve implementing a function to clear the shopping cart and remove all items from it.
+9. Cancel Cart Function:
+   - User Action: Empty the shopping cart.
+   - Implementation: Implement a function to clear the shopping cart and remove all items from it.
 
 
 
-### Getting Started
+## Getting Started
 
 Clone this project:
 
-https://github.com/incognito1025/project-command-line-inventory-app.git
+` git clone https://github.com/incognito1025/project-command-line-inventory-app.git`
 
 
+After cloning this project, run the following commands:
 
-After cloning this project, run the following commands on the backend:
-
+```
 cd project-command-line-inventory-app
-
-touch index.js
-
-touch .gitignore (and add appropriate files and folders like node_modules
-.DS_Store)
-
 mkdir src
-
 touch src/helpers.js
+npm init -y
 
-npm init -y (will create package.json)
+```
 
+Add the following to the package.json file:
+```
 {
-  "name": "my-project",
+  "name": "rex-begonias-galore",
   "version": "1.0.0",
-  "description": "",
+  "description": "Command-line inventory application for managing Rex Begonias",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -81,79 +82,85 @@ npm init -y (will create package.json)
   "license": "ISC"
 }
 
-Application entry point
-Within an application, there has to be a starting point for the application to run. The package.json file defines this filename with the key main. According to the default package.json file, the entry point into the application is a file called index.js. You can create it by running the following command:
 
-touch index.js
-Open this file and write a simple console log:
-console.log("Hello, Node.js!");
+```
+
+### Application entry point
+Create the entry point for the application:
+`touch index.js`
+
+Open index.js and write a simple console log:
+`console.log("Hello, Node.js!");`
 
 
 To run this program, type:
-node index.js
+`node index.js`
 
 
-Based on the user stories above, create scripts that would run the following (Rsl_ represents a unique id for an example animal):
 
-npm run index
-npm run create rex begonia taconite
-npm run show Rsl_
-npm run update Rsl_ "rex begonia cosmos"
-npm run destroy Rsl_
-npm run total
+## Implementing Features
+### Scripts
+Based on the user stories, create scripts in package.json to run the following commands:
 
-
-package.json:
- "scripts":{
- "index": "node index.js index",
- "create": "node index.js create",
- "show": "node index.js show",
- "update": "node index.js update",
- "destroy": "node index.js destroy",
- "score": "node index.js score"
+Based on the user stories above, create scripts that would run the following (Rsl_ represents a unique id for an example begonia):
+```
+"scripts": {
+  "index": "node index.js",
+  "create": "node index.js create",
+  "show": "node index.js show",
+  "update": "node index.js update",
+  "destroy": "node index.js destroy",
+  "total": "node index.js total"
 }
 
+```
 
-Index
+### Directory Structure
+Create the necessary directories and files:
+```
 mkdir data
-mkdir data/begonias.json
+touch data/begonias.json
+
+```
+
+### Adding Unique ID
+Install the nanoid package to generate unique IDs:
+
+` npm install nanoid@3 `
 
 
-To add an id, you need to add an npm package to generate a unique id. Limit the id to be 4 characters long, so that there is less for the user to type.
+Create the controller file:
 
-npm install nanoid@3
-
-
-
-To add id
-
-touch src/begoniaController.js
+` touch src/begoniaController.js `
 
 
-Create the following to import into begoniaController.js
+## Back-end Commands
 
-touch data/begoniaPoints.json
-
-
-Here are the following commands
-
-Show
-
-npm run show Rsl_
+### Show
+`npm run show Rsl_`
 
 
-Destroy
-
-npm run destroy Rsl_
-
-
-Update
-
-npm run update Rsl_ "red fox"
+### Destroy
+`npm run destroy Rsl_`
 
 
-Total will be the sum of the begonia points.
+### Update
+`npm run update Rsl_ "rex begonia cosmos"`
 
+
+### Total 
+The total command will sum the begonia points.
+
+
+### Testing
+This app uses Jest for testing.
+
+Jest Supertest testing on the backend:
+
+`app.test.js` - integration testing
+
+Project Structure:
+```
 .
 ├── __tests__
 │   ├── helpers
@@ -169,14 +176,14 @@ Total will be the sum of the begonia points.
     │   └── validation.js
     └── products.js
 
+```
 
 
 # Notes
 
-### Jest: JavaScript Testing Framework
+Jest: JavaScript Testing Framework
+This app includes Jest testing capabilities.
 
-This app has Jest testing.
+To run the tests, use:
+`npm test`
 
-Jest Supertest testing on backend:
-
-app.test.js - integration testing
