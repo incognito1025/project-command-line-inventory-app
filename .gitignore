@@ -1,0 +1,36 @@
+node_modules
+.DS_Store
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore npm's cache
+.npm
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore environment-specific files
+.env
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore compiled code and build artifacts
+dist/
+build/
+*.exe
+*.dll
+*.so
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
