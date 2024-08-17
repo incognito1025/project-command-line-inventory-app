@@ -69,3 +69,6 @@ There are no tests for this project and you _should not_ fork and clone this rep
 ## Example
 
 For example, you can choose to track the inventory of "cookies" at a bakery. In that case, the keys you store for each cookie could be "name", "priceInCents", "inStock", and "isVegan". Alternatively, you could track "shoes" at a shoe store. In addition to the required keys, you might also track `shoeSize`.
+
+first table should be the category
+second table should be the suppliers

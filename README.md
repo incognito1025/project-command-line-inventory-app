@@ -187,3 +187,12 @@ This app includes Jest testing capabilities.
 To run the tests, use:
 `npm test`
 
+If you see those files, you should stop them from being added and tracked:
+
+rm -rf node_modules.
+git commit -am 'remove node modules'.
+Update the .gitignore to ignore node_modules.
+npm install - to install the node packages listed in the package.json.
+git commit -am "remove node_modules tracking".
+You should now get an update similar to the following (only the .gitignore has changed)
+
