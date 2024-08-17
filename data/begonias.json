@@ -1,0 +1,73 @@
+[
+    {
+      "id": "rex_01",
+      "variety": "Marmaduke",
+      "size": "Medium",
+      "price": 15.99,
+      "quantity": 10
+    },
+    {
+      "id": "rex_02",
+      "variety": "Iron Cross",
+      "size": "Small",
+      "price": 12.49,
+      "quantity": 20
+    },
+    {
+      "id": "rex_03",
+      "variety": "Fireworks",
+      "size": "Large",
+      "price": 18.75,
+      "quantity": 5
+    },
+    {
+      "id": "rex_04",
+      "variety": "Escargot",
+      "size": "Medium",
+      "price": 16.50,
+      "quantity": 8
+    },
+    {
+      "id": "rex_05",
+      "variety": "Shadow King",
+      "size": "Small",
+      "price": 14.30,
+      "quantity": 15
+    },
+    {
+      "id": "rex_06",
+      "variety": "Red Tango",
+      "size": "Large",
+      "price": 19.99,
+      "quantity": 7
+    },
+    {
+      "id": "rex_07",
+      "variety": "Silver Queen",
+      "size": "Medium",
+      "price": 17.25,
+      "quantity": 12
+    },
+    {
+      "id": "rex_08",
+      "variety": "Rumba",
+      "size": "Small",
+      "price": 13.50,
+      "quantity": 18
+    },
+    {
+      "id": "rex_09",
+      "variety": "Green Gold",
+      "size": "Large",
+      "price": 20.00,
+      "quantity": 4
+    },
+    {
+      "id": "rex_10",
+      "variety": "Jurassic Silver Swirl",
+      "size": "Medium",
+      "price": 16.75,
+      "quantity": 9
+    }
+  ]
+  
